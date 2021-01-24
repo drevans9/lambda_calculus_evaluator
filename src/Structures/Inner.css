@@ -1,0 +1,23 @@
+.InnerContainer{
+    padding:15px 5px 0px 5px;
+    height:40px;    
+}
+
+.InnerText{
+    margin:0px;     
+    float:left; 
+}
+
+#AbstractionInput{
+    width:20px;
+}
+
+#VariableInput{
+    margin:auto;
+    width:20px;
+}
+
+.ApplicationText{
+    margin:auto;
+    width: 50%;
+}

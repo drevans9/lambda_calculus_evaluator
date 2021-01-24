@@ -6,7 +6,11 @@ import DragAndDrop from './App.jsx'
 
 
 ReactDOM.render(
-  <DragAndDrop />,
+  <div>
+    <div>Instructions</div>
+    <DragAndDrop />
+  </div>
+  ,
   document.getElementById('root')
 );
 

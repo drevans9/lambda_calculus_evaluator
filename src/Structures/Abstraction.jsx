@@ -1,4 +1,5 @@
 const abstraction = {
+    value: "",
     type: "abstraction",
     size: 100,
     ports: {

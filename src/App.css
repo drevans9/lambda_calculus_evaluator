@@ -35,4 +35,29 @@
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
-    }
+}
+
+.EvaluateButton{
+    margin: 15px;
+    width: 90%;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #0a0158;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.EvaluateButton:hover {
+    background: #434343;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.EvalButtContainer{
+    margin-top: 40vh;
+}

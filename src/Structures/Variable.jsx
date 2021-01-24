@@ -1,4 +1,5 @@
 const variable = {
+    value: "",
     type: "variable",
     ports: {
         portA: {

@@ -6,13 +6,7 @@ import graph from './Structures/Graph';
 import abstraction from './Structures/Abstraction';
 import variable from './Structures/Variable';
 import application from './Structures/Application';
-
-
-// C:\Users\danie\OneDrive\Programming\lambda_calculus_evaluator\node_modules\@mrblenny\react-flow-chart
-
-
-
-
+import NodeInnerHandler from './Structures/NodeInput';
 
 
 class DragAndDrop extends React.Component {
@@ -20,9 +14,15 @@ class DragAndDrop extends React.Component {
   constructor(props) {
     super(props);
     this.state = graph;
+  }
 
+  printgraph(value) {
+
+    const test = value;
+    console.log(test);
 
   }
+
 
 
   render() {
@@ -81,14 +81,21 @@ class DragAndDrop extends React.Component {
             onClick={() => stateActions.onDeleteKey({})}>
             Delete
           </button>
+          <div class="EvalButtContainer">
+            <button
+              class="EvaluateButton"
+              onClick={() => this.printgraph(this.state)}>
+              Evaluate
+          </button>
+          </div>
         </div>
         <div class="Flowchart">
           <FlowChart
-
             chart={graph}
             callbacks={stateActions}
             config={{
             }}
+            Components={{ NodeInner: NodeInnerHandler }}
 
           />
         </div>

@@ -1,4 +1,5 @@
 const application = {
+    value: "",
     type: "application",
     ports: {
         portA: {

@@ -1,35 +1,17 @@
-.Sidebar{
-    width:20%;
-    height:70vh;
-    float:right;
-}
-
-.DragBox{
-    outline-style: solid;
+.EvaluateButton{
     margin: 15px;
-}
-
-.FlowChart{
-    width:80%;
-    height:70vh;
-    float:left;
-    display: flex;
-}
-
-.DeleteButton{
-    margin: 15px;
-    width: 90%;
+    width: 300px;
     color: #fff !important;
     text-transform: uppercase;
     text-decoration: none;
-    background: #ed3330;
+    background: #0a0158;
     padding: 20px;
     border-radius: 5px;
     border: none;
     transition: all 0.4s ease 0s;
 }
 
-.DeleteButton:hover {
+.EvaluateButton:hover {
     background: #434343;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);

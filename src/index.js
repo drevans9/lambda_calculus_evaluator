@@ -7,7 +7,7 @@ import DragAndDrop from './App.jsx'
 
 ReactDOM.render(
   <div>
-    <div>Instructions</div>
+    <h1>Instructions</h1>
     <DragAndDrop />
   </div>
   ,

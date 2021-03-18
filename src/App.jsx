@@ -7,7 +7,7 @@ import abstraction from './Structures/Abstraction';
 import variable from './Structures/Variable';
 import application from './Structures/Application';
 import NodeInnerHandler from './Structures/NodeInput';
-
+import Evaluator from './evaluate.jsx'
 
 class DragAndDrop extends React.Component {
 
@@ -81,13 +81,7 @@ class DragAndDrop extends React.Component {
             onClick={() => stateActions.onDeleteKey({})}>
             Delete
           </button>
-          <div class="EvalButtContainer">
-            <button
-              class="EvaluateButton"
-              onClick={() => this.printgraph(this.state)}>
-              Evaluate
-          </button>
-          </div>
+
         </div>
         <div class="Flowchart">
           <FlowChart
@@ -96,8 +90,10 @@ class DragAndDrop extends React.Component {
             config={{
             }}
             Components={{ NodeInner: NodeInnerHandler }}
-
           />
+        </div>
+        <div>
+          <Evaluator graph={this.state} />
         </div>
       </div>
     );

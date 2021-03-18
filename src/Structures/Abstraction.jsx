@@ -17,13 +17,6 @@ const abstraction = {
                 custom: "property"
             }
         },
-        portC: {
-            id: "portC",
-            type: "bottom",
-            properties: {
-                custom: "property"
-            }
-        }
     },
     properties: {
         custom: "new prop"

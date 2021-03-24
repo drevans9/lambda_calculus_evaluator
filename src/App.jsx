@@ -4,7 +4,17 @@ import { FlowChart, actions, REACT_FLOW_CHART } from "@mrblenny/react-flow-chart
 import { mapValues } from "lodash";
 import graph from './Structures/Graph';
 import abstraction from './Structures/Abstraction';
+import abstraction2 from './Structures/Abstraction2';
+import abstraction3 from './Structures/Abstraction3';
+import abstraction4 from './Structures/Abstraction4';
+import abstraction5 from './Structures/Abstraction5';
+import abstraction6 from './Structures/Abstraction6';
 import variable from './Structures/Variable';
+import variable2 from './Structures/Variable2';
+import variable3 from './Structures/Variable3';
+import variable4 from './Structures/Variable4';
+import variable5 from './Structures/Variable5';
+import variable6 from './Structures/Variable6';
 import application from './Structures/Application';
 import NodeInnerHandler from './Structures/NodeInput';
 import Evaluator from './evaluate.jsx'
@@ -67,6 +77,76 @@ class DragAndDrop extends React.Component {
             onDragStart={(e) =>
               e.dataTransfer.setData(
                 REACT_FLOW_CHART,
+                JSON.stringify(abstraction2)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Abstraction2
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(abstraction3)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Abstraction3
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(abstraction4)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Abstraction4
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(abstraction5)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Abstraction5
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(abstraction6)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Abstraction6
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
                 JSON.stringify(variable)
               )
             }
@@ -74,7 +154,77 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Variable
+            Variable A
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(variable2)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Variable B
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(variable3)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Variable C
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(variable4)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Variable D
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(variable5)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Variable E
+          </div>
+          <div
+            draggable
+            onDragStart={(e) =>
+              e.dataTransfer.setData(
+                REACT_FLOW_CHART,
+                JSON.stringify(variable6)
+              )
+            }
+            class="DragBox"
+            style={{ cursor: "grabbing" }}
+
+          >
+            Variable F
           </div>
           <button
             class="DeleteButton"

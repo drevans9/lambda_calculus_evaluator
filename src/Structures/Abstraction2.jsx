@@ -1,5 +1,5 @@
-const abstraction = {
-    value: "A",
+const abstraction2 = {
+    value: "B",
     type: "abstraction",
     size: 100,
     ports: {
@@ -23,4 +23,4 @@ const abstraction = {
     }
 };
 
-export default abstraction;
+export default abstraction2;

@@ -1,5 +1,5 @@
-const variable = {
-    value: "A",
+const variable4 = {
+    value: "D",
     type: "variable",
     ports: {
         portA: {
@@ -15,4 +15,4 @@ const variable = {
     }
 };
 
-export default variable;
+export default variable4;

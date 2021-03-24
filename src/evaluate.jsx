@@ -158,12 +158,12 @@ class Evaluator extends React.Component {
             let child1 = nodes.filter(n => (((n.id === link1.from.nodeId) || (n.id === link1.to.nodeId) && n.id !== node.id)))[0]
 
             //abstraction value goes here
-            return new Abstraction("X", this.BuildTerm(nodes, links, child1));
+            return new Abstraction(node.value, this.BuildTerm(nodes, links, child1));
 
         } else if (node.type === "variable") {
 
             //value is meant to go here
-            return new Variable("X")
+            return new Variable(node.value)
 
         } else {
             //Error

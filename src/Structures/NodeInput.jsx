@@ -2,11 +2,16 @@ import * as React from "react";
 import './Inner.css'
 
 class NodeInnerHandler extends React.Component {
+
+
     constructor(props) {
         super(props);
-        console.log(props);
-        this.state = "";
+        this.state = { value: "" };
         this.type = props.node.type;
+    }
+
+    updateValue(event) {
+        this.props.onValInput(event);
     }
 
     render() {
@@ -17,20 +22,19 @@ class NodeInnerHandler extends React.Component {
                         <React.Fragment>
                             <p class="InnerText"><b>&lambda;.</b></p>
                             <input type="text" id="AbstractionInput" placeholder="Var" maxLength="1"
-                                onChange={() => this.setState(() => document.getElementById('AbstractionInput').value)} />
-                            {/* onChange={() => this.props.onValChange("ZZ")} /> */}
+                                onChange={(event) => this.updateValue(event)} />
                         </React.Fragment>
                     ) : (this.type === "variable" ? (
                         <React.Fragment>
                             <input type="text" id="VariableInput" placeholder="Var" maxLength="1"
-                                onChange={() => this.setState(() => document.getElementById('VariableInput').value)} />
+                                onChange={(event) => this.updateValue(event)} />
                         </React.Fragment>
                     ) : (
-                            <React.Fragment>
-                                <p class="ApplicationText"><b>@</b></p>
-                            </React.Fragment>
-                        )
-                        )
+                        <React.Fragment>
+                            <p class="ApplicationText"><b>@</b></p>
+                        </React.Fragment>
+                    )
+                    )
                 }
             </div>
         );

@@ -16,11 +16,11 @@ class NodeInnerHandler extends React.Component {
 
     render() {
         return (
-            <div class="InnerContainer" >
+            <div className="InnerContainer" >
                 {
                     this.type === "abstraction" ? (
                         <React.Fragment>
-                            <p class="InnerText"><b>&lambda;.</b></p>
+                            <p className="InnerText"><b>&lambda;.</b></p>
                             <input type="text" id="AbstractionInput" placeholder="Var" maxLength="1"
                                 onChange={(event) => this.updateValue(event)} />
                         </React.Fragment>
@@ -31,7 +31,7 @@ class NodeInnerHandler extends React.Component {
                         </React.Fragment>
                     ) : (
                         <React.Fragment>
-                            <p class="ApplicationText"><b>@</b></p>
+                            <p className="ApplicationText"><b>@</b></p>
                         </React.Fragment>
                     )
                     )

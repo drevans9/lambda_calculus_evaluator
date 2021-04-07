@@ -7,7 +7,7 @@ import abstraction from './Structures/Abstraction';
 import variable from './Structures/Variable';
 import application from './Structures/Application';
 import NodeInnerHandler from './Structures/NodeInput';
-import Evaluator from './evaluate.jsx'
+import Evaluator from './Evaluate/evaluate.jsx'
 
 class DragAndDrop extends React.Component {
 
@@ -33,7 +33,7 @@ class DragAndDrop extends React.Component {
 
     return (
       <div>
-        <div class="Sidebar">
+        <div className="Sidebar">
 
           <div
             draggable
@@ -43,7 +43,7 @@ class DragAndDrop extends React.Component {
                 JSON.stringify(application)
               )
             }
-            class="DragBox"
+            className="DragBox"
             style={{ cursor: "grabbing" }}
           >
             Application
@@ -56,7 +56,7 @@ class DragAndDrop extends React.Component {
                 JSON.stringify(abstraction)
               )
             }
-            class="DragBox"
+            className="DragBox"
             style={{ cursor: "grabbing" }}
 
           >
@@ -70,20 +70,20 @@ class DragAndDrop extends React.Component {
                 JSON.stringify(variable)
               )
             }
-            class="DragBox"
+            className="DragBox"
             style={{ cursor: "grabbing" }}
 
           >
             Variable
           </div>
           <button
-            class="DeleteButton"
+            className="DeleteButton"
             onClick={() => stateActions.onDeleteKey({})}>
             Delete
           </button>
 
         </div>
-        <div class="Flowchart">
+        <div className="Flowchart">
           <FlowChart
             chart={graph}
             callbacks={stateActions}

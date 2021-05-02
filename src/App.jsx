@@ -70,7 +70,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction
+            Abstraction A
           </div>
           <div
             draggable
@@ -84,7 +84,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction2
+            Abstraction B
           </div>
           <div
             draggable
@@ -98,7 +98,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction3
+            Abstraction C
           </div>
           <div
             draggable
@@ -112,7 +112,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction4
+            Abstraction D
           </div>
           <div
             draggable
@@ -126,7 +126,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction5
+            Abstraction E
           </div>
           <div
             draggable
@@ -140,7 +140,7 @@ class DragAndDrop extends React.Component {
             style={{ cursor: "grabbing" }}
 
           >
-            Abstraction6
+            Abstraction F
           </div>
           <div
             draggable
